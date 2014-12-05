@@ -36,6 +36,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'debugger', group: [:development, :test]
 
 group :development do
+    gem 'byebug'
+    gem 'web-console',  '2.0.0.beta3'
     gem 'rspec-rails'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
     gem 'spring'
@@ -44,4 +46,7 @@ end
 group :test do
     gem 'rspec'
     gem 'webrat'
+    gem 'minitest-reporters'
+    gem 'mini_backtrace'
+    gem 'guard-minitest'
 end
